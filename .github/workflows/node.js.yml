@@ -27,7 +27,7 @@ jobs:
   strategy:
       - uses: actions/upload-artifact@master
         with:
-          name: webpack artifacts
+    needs: build
           path: public/
       node-version: [10.x, 12.x target, 14.x target, 15.x]
       os: [ubuntu-latest, windows-2016]
